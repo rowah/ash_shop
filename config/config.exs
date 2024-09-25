@@ -7,6 +7,8 @@
 # General application configuration
 import Config
 
+config :ash_shop, :ash_domains, [AshShop.Shop]
+
 config :ash_shop,
   ecto_repos: [AshShop.Repo],
   generators: [timestamp_type: :utc_datetime]
